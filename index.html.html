@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Augusto Navarro · Capitán y regatista · Sotavento Sailing</title>
+<meta name="description" content="Capitán licenciado y regatista peruano con 51 años navegando. Entregas de veleros, catamaranes y yates a motor por todo el continente.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF3F4;--ink:#0B2B3B;--muted:#4A6370;--line:#BCCED5;--accent:#0F6E80;
+  --sea:#0B2B3B;--grid:#1E4457;--route:#F0B323;--chart-text:#CFE0E6;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07161E;--ink:#E3EEF1;--muted:#93AAB4;--line:#1E3A47;--accent:#4FB4C7;--sea:#0B2B3B}}
+:root[data-theme="dark"]{--bg:#07161E;--ink:#E3EEF1;--muted:#93AAB4;--line:#1E3A47;--accent:#4FB4C7;--sea:#0B2B3B}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--route);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(1.25rem,5vw,3rem)}
+nav{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.5rem 0;font:500 .95rem var(--display)}
+nav a{color:var(--ink);text-decoration:none;margin-right:1.4rem}
+nav a:last-child{margin-right:0}
+nav a:hover{text-decoration:underline;text-underline-offset:4px}
+h1{font:800 clamp(2.6rem,9vw,6rem)/.95 var(--display);letter-spacing:-.03em;margin:2.5rem 0 1.5rem}
+.lead{font-size:clamp(1.25rem,2.6vw,1.6rem);line-height:1.45;max-width:36em;margin:0 0 2rem}
+.chart{background:var(--sea);border-radius:6px;padding:clamp(.75rem,2vw,1.5rem);margin:2.5rem 0 0}
+.chart svg{display:block;width:100%;height:auto}
+.chart figcaption{color:var(--chart-text);font:400 .95rem/1.4 var(--body);padding:.75rem .25rem 0}
+.grid line{stroke:var(--grid);stroke-width:1}
+.grid .eq{stroke:#2C6079}
+.grid text{fill:#6F95A6;font:500 18px var(--display)}
+.route{fill:none;stroke:var(--route);stroke-width:4;stroke-linecap:round;stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 3.2s .3s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.pt circle{fill:var(--sea);stroke:var(--route);stroke-width:3.5}
+.pt text{fill:var(--chart-text);font:500 24px var(--display)}
+section{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem 3rem;padding:4rem 0;border-top:1px solid var(--line)}
+@media(min-width:820px){section{grid-template-columns:220px minmax(0,1fr)}}
+h2{font:800 1.7rem/1.1 var(--display);letter-spacing:-.01em;margin:0}
+h3{font:600 1.1rem var(--display);margin:2rem 0 .4rem}
+h3:first-child{margin-top:0}
+p{margin:0 0 1rem;max-width:40em}
+.muted{color:var(--muted)}
+dl{margin:0}
+.row{display:grid;grid-template-columns:minmax(0,1fr);gap:.1rem 1.5rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.row:first-child{padding-top:0}
+@media(min-width:620px){.row{grid-template-columns:130px minmax(0,1fr)}}
+dt{font:500 .95rem var(--display);color:var(--accent)}
+dd{margin:0}
+dd b{font-weight:600}
+.sub{color:var(--muted);font-size:1rem}
+.tight .row{padding:.7rem 0}
+.contact a{font:800 clamp(1.4rem,4vw,2.4rem)/1.2 var(--display);letter-spacing:-.02em;word-break:break-word}
+.contact p{margin-bottom:.4rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){.route{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Principal">
+    <span><a href="#top"><b>Sotavento Sailing</b></a></span>
+    <span><a href="#entregas">Entregas</a><a href="#regatas">Regatas</a><a href="#capitan">Capitán</a><a href="#contacto">Contacto</a></span>
+  </nav>
+
+  <header id="top">
+    <h1>Augusto Navarro Mulanovich</h1>
+    <p class="lead">Capitán licenciado y regatista peruano. Llevo 51 años navegando y traigo tu barco a casa, de Burdeos a Callao, de Miami a Salinas, de Panamá a Washington.</p>
+
+    <figure class="chart">
+      <svg viewBox="0 0 900 680" role="img" aria-labelledby="ct">
+        <title id="ct">Mapa de la ruta Burdeos a Callao: La Coruña, Vigo, Gran Canaria, Martinica, Colón, Salinas y Callao</title>
+        <g class="grid" id="grid"></g>
+        <path class="route" d="M844 52 L766 66 L763 78 L696 220 C560 260 400 320 240 354 L51 406 L41 522 L79 620"/>
+        <g class="pt">
+          <circle cx="844" cy="52" r="8"/><text x="826" y="46" text-anchor="end">Burdeos</text>
+          <circle cx="766" cy="66" r="7"/><text x="748" y="62" text-anchor="end">La Coruña</text>
+          <circle cx="763" cy="78" r="7"/><text x="745" y="96" text-anchor="end">Vigo</text>
+          <circle cx="696" cy="220" r="8"/><text x="678" y="214" text-anchor="end">Gran Canaria</text>
+          <circle cx="240" cy="354" r="8"/><text x="240" y="330" text-anchor="middle">Martinica</text>
+          <circle cx="51" cy="406" r="8"/><text x="72" y="400">Colón</text>
+          <circle cx="41" cy="522" r="8"/><text x="62" y="530">Salinas</text>
+          <circle cx="79" cy="620" r="9"/><text x="102" y="628">Callao</text>
+        </g>
+      </svg>
+      <figcaption>Lagoon 51 nuevo entregado del 2 de enero al 4 de abril de 2026. Cruce del Atlántico, Canal de Panamá y costa del Pacífico.</figcaption>
+    </figure>
+  </header>
+
+  <section id="entregas">
+    <h2>Entregas de botes</h2>
+    <div>
+      <p>Veleros, catamaranes y yates a motor, con tripulación de 3 en la mayoría de los viajes. Algunas de las travesías más largas:</p>
+      <dl>
+        <div class="row"><dt>Ene–Abr 2026</dt><dd><b>Lagoon 51 nuevo</b><br><span class="sub">Burdeos → La Coruña → Vigo → Gran Canaria → Martinica → Colón → Callao</span></dd></div>
+        <div class="row"><dt>Abr–May 2026</dt><dd><b>Nordhavn 56</b><br><span class="sub">Panamá → San Diego → Point Roberts, Washington</span></dd></div>
+        <div class="row"><dt>Jun 2026</dt><dd><b>Fountain Pajot 40</b><br><span class="sub">Santa Cruz, Galápagos → San Carlos, Panamá. 5 días, tripulación de 4</span></dd></div>
+        <div class="row"><dt>Jul 2024</dt><dd><b>Dufour 460</b><br><span class="sub">Higuerillas, Chile → Callao. 1,650 millas náuticas en 10 días</span></dd></div>
+        <div class="row"><dt>Mayo 2023</dt><dd><b>Viking 68, pesca deportiva</b><br><span class="sub">Miami → Panamá en 6 días, luego Salinas</span></dd></div>
+        <div class="row"><dt>Mayo 2019</dt><dd><b>Expedición a la Polinesia, Dufour 44</b><br><span class="sub">Perú → Nuku Hiva (4,000 millas), Tuamotus y Tahití. 35 días de navegación</span></dd></div>
+        <div class="row"><dt>Mar 2017</dt><dd><b>Swan 45</b><br><span class="sub">Palma de Mallorca → Salinas, con cruce del Atlántico. 55 días</span></dd></div>
+        <div class="row"><dt>Nov 2016</dt><dd><b>Lagoon 450 F</b><br><span class="sub">Fort Lauderdale → Callao. 2,320 millas náuticas</span></dd></div>
+        <div class="row"><dt>Jun 2015</dt><dd><b>Botín &amp; Carkeek 46</b><br><span class="sub">Ancona, Italia → Barcelona. 1,247 millas náuticas</span></dd></div>
+        <div class="row"><dt>2014 y 2015</dt><dd><b>Leopard 44 y Beneteau Oceanis 54.5</b><br><span class="sub">Tórtola, BVI → Panamá → Salinas → Callao</span></dd></div>
+      </dl>
+      <p class="muted" style="margin-top:1.5rem">Cada barco se prepara antes de zarpar: limpieza del diésel, filtros, correas y repuestos del generador. Es lo que evita los días perdidos esperando una pieza en medio del Caribe.</p>
+    </div>
+  </section>
+
+  <section id="regatas">
+    <h2>Regatas</h2>
+    <div>
+      <p>Empecé a los 9 años en Optimist y pasé por Láser, Lightning, J24, veleros oceánicos y catamaranes. He sido campeón nacional en cada una de esas clases y he competido en Mundiales, Sudamericanos, Panamericanos, Bolivarianos y Odesur.</p>
+      <dl class="tight">
+        <div class="row"><dt>Lightning</dt><dd><b>Campeón nacional</b> en 1978, 1984, 1994, 1995, 1996, 1997, 1998 y 2018.<br><span class="sub">Mundial: 6.º en 1978, 4.º en 1980, 4.º en 1984</span></dd></div>
+        <div class="row"><dt>Oceánicos</dt><dd><b>Campeón nacional</b> en 1984, 1988, 1997, 1998, 2003 (Papirus), 2011 (Kuan Kun), 2014 (Speil Vinden) y 2023 (Yolo, Jeanneau Sunfast 3600).</dd></div>
+        <div class="row"><dt>J24</dt><dd><b>Campeón nacional</b> en 2003 y 2013.<br><span class="sub">Sudamericano 2010: 5.º</span></dd></div>
+        <div class="row"><dt>Regata Galápagos</dt><dd><b>2025: 1.º con Yolo</b> (600 millas náuticas)<br><span class="sub">2017: 3.º con Speil Vinden. 2014: 9.º. 2011: 7.º con Kuan Kun</span></dd></div>
+        <div class="row"><dt>Otros</dt><dd><b>Campeón de la Copa Sin Fronteras 2000.</b><br><span class="sub">Mundial ORC 2015: 11.º en la general y 2.º en Corinthians</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="capitan">
+    <h2>Capitán</h2>
+    <div>
+      <h3>Licencias</h3>
+      <p>Capitán licenciado, licencia DI 25675544 CY. Certificación aprobada por la Guardia Costera de EE. UU. (US Coast Guard). Boating Safety Education ID 741209, de la National Association of State Boating Law Administrators, reconocida por la Guardia Costera.</p>
+      <h3>Nacionalidad</h3>
+      <p>Tengo nacionalidad peruana y estadounidense, así que puedo viajar a recoger un bote sin necesidad de visa.</p>
+      <h3>Instrumentos y tripulación</h3>
+      <p>Domino Navionics, Evolution y pilotos automáticos. He sido tripulante en todas las posiciones de un velero y de un catamarán.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <div>
+      <p>Cuéntame qué barco es, dónde está y a dónde va.</p>
+      <p><a href="mailto:augusto@sotaventosailing.com">augusto@sotaventosailing.com</a></p>
+      <p><a href="tel:+51997523545">+51 997 523 545</a></p>
+      <p class="muted">Perú · Estados Unidos: <a href="tel:+17864488983" style="font:inherit;font-size:1.1rem">+1 786 448 8983</a></p>
+    </div>
+  </section>
+
+  <footer>Augusto Navarro Mulanovich · Sotavento Sailing</footer>
+</div>
+<script>
+(function(){
+  var g=document.getElementById('grid'),ns='http://www.w3.org/2000/svg',h='';
+  for(var lon=-80;lon<=0;lon+=10){var x=(lon+85)*10;h+='<line x1="'+x+'" y1="0" x2="'+x+'" y2="680"/>';if(lon%20===0)h+='<text x="'+(x+5)+'" y="672">'+Math.abs(lon)+(lon<0?'°O':'°')+'</text>';}
+  for(var lat=40;lat>=-10;lat-=10){var y=(50-lat)*10;h+='<line class="'+(lat===0?'eq':'')+'" x1="0" y1="'+y+'" x2="900" y2="'+y+'"/>';h+='<text x="860" y="'+(y-6)+'">'+Math.abs(lat)+(lat>0?'°N':lat<0?'°S':'°')+'</text>';}
+  g.innerHTML=h;
+})();
+</script>
+</body>
+</html>
